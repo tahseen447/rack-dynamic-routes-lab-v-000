@@ -7,7 +7,10 @@ class Application
     req = Rack::Request.new(env)
 
     if req.path.match(/items/)
-      item = req.params['item']
+      item_name = req.path.split("/items/").last
+      song = @@songs.find{|s| s.title == song_title}
+
+      resp.write song.artist
 
     else
       resp.write("Route not found")
