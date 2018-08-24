@@ -2,7 +2,7 @@ class Application
 
   def call
     resp = Rack::Response.new
-    req = Rack::Request.
+    req = Rack::Request.new
 
   end
 end
