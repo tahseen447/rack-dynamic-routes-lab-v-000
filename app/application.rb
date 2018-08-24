@@ -8,6 +8,7 @@ class Application
 
     if !0
     else
+      resp.write("Route not found")
       resp.status = 404
     end
 
